@@ -64,10 +64,10 @@ if uploaded_file is not None:
     col1, col2 = st.columns(2)
     with col1:
         st.header("Original Image")
-        st.image(image, use_column_width=True)
+        st.image(image, use_container_width=True)
     with col2:
         st.header(f"{filter_option} Filter")
-        st.image(processed_image, use_column_width=True)
+        st.image(processed_image, use_container_width=True)
 
     # Prepare processed image for download
     # If the processed image is single-channel, convert it to 3-channel for saving as PNG
